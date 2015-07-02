@@ -1,0 +1,22 @@
+{
+    "name": "silverslice/markdown-api",
+    "description": "Markdown documentation generator",
+    "keywords": ["markdown", "doc", "documentation", "reflection"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Igor Mikheev",
+            "email": "silver_slice@mail.ru"
+        }
+    ],
+    "require": {
+        "php": ">=5.5",
+        "phpdocumentor/reflection-docblock": "~2.0"
+    },
+    
+    "autoload": {
+        "psr-4": {
+            "Silverslice\\MarkdownApi\\": "src/"
+        }
+    }
+}
