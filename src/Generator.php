@@ -24,7 +24,7 @@ class Generator
 
         foreach ($methods as $method) {
             if (!$method->isInternal()) {
-                $phpdoc = new DocBlock($method->getDocComment());
+                $phpdoc = new DocBlock($method->getDocComment(), new DocBlock\Context($ref->getNamespaceName()));
                 //var_dump($phpdoc);
                 $signature = $this->getSignature($method);
                 $this->generatedText .= $this->render([
